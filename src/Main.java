@@ -5,9 +5,6 @@ public class Main {
 
         //THE BLACKJACK IS GOING TO BE 1V1 FOR NOW
 
-
-
-
         ArrayList<Integer> deck = new ArrayList<>();
         addToDeck(deck,1);
         addToDeck(deck,2);

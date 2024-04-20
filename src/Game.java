@@ -16,9 +16,9 @@ public class Game {
         ArrayList<Integer> fulla_paikth = new ArrayList<>();
         ArrayList<Integer> fulla_manas = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
-        System.out.print("KALHSPERA KYRIE " + player + " EISTE ETOIMOS NA JEKINISOUME : ");
+        System.out.print("KALHSPERA KYRIE " + player + " EISTE ETOIMOS NA JEKINISOUME ->YES: ");
         String answer = sc.nextLine();
-        if (answer.equals("yes")) {
+        if (answer.equals("YES")) {
             System.out.println("JEKINAEI TO PAIXNIDI KALH SAS EPITUXIA!!!");
             boolean flag = true;
             while (flag) {
@@ -27,7 +27,7 @@ public class Game {
                 String sunexeia;
                 System.out.print("STAY OR HIT : ");
                 sunexeia = sc.nextLine();
-                if (sunexeia.equals("s")) { //s->STAY
+                if (sunexeia.equals("STAY")) { //s->STAY
                     flag = false;
                 }
                 int sum = 0;
@@ -35,7 +35,7 @@ public class Game {
                     sum += card;
                 }
                 boolean lose = false;
-                if (sunexeia.equals("h")) { //h->HIT
+                if (sunexeia.equals("HIT")) { //h->HIT
                     while (sum < 21 && !lose) {
                         System.out.println("TA FULLA SOU = " + moirasma(fulla_paikth));
                         sum = 0;
@@ -49,7 +49,7 @@ public class Game {
                         } else {
                             System.out.print("STAY OR HIT : ");
                             sunexeia = sc.nextLine();
-                            if (sunexeia.equals("s")) {
+                            if (sunexeia.equals("STAY")) {
                                 flag = false;
                                 break;
                             }
