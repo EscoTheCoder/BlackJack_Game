@@ -64,7 +64,7 @@ public class Main {
         addToDeck(deck,10);
 
         Game game=new Game("Nikolas",deck);
-        game.partida();
+        game.play();
 
 
     }
